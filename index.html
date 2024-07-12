@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Scrollable Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root">
+    <div class="form-container">
+      <form action="/submit" method="POST">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone no.:</label>
+              <input type="phone" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+          <div class="form-group">
+              <label for="prescription">Prescription:</label>
+              <textarea id="Prescription" name="Prescription" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="meds">Medicines prescribed:</label>
+            <textarea id="meds" name="meds" rows="2" required></textarea>
+        </div>
+        <div id="additional-fields"></div>
+        <div class="form-group">
+          <button type= "button" id="add-button">Add</button>
+      </div>
+          <!-- Add more form fields as needed -->
+          <div class="form-group submit">
+              <button type="submit">Submit</button>
+          </div>
+
+      </form>
+      <script src="script.js"></script>
+  </div>
+
+  </div>
+   
+</body>
+</html>
